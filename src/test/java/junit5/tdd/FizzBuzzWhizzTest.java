@@ -1,15 +1,11 @@
 package junit5.tdd;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class FizzBuzzWhizzTest {
-
     @Test
     void should_be_fizz_when_play_say_given_3() {
         //given
@@ -73,5 +69,18 @@ public class FizzBuzzWhizzTest {
 
         //then
         assertThat(actual,is("FizzBuzzWhizz"));
+    }
+
+    @Test
+    void should_be_numberValue_when_play_say_given_nor_3_5_7() {
+        //given
+        int number = 13;
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+
+        //when
+        String actual = fizzBuzzWhizz.say(number);
+
+        //then
+        assertThat(actual,is(String.valueOf(number)));
     }
 }
