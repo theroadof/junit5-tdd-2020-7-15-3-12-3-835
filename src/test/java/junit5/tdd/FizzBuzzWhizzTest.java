@@ -33,7 +33,7 @@ public class FizzBuzzWhizzTest {
         String actual = fizzBuzzWhizz.say(number);
 
         //then
-        assertThat(actual,is("buzz"));
+        assertThat(actual,is("Buzz"));
     }
 
 
