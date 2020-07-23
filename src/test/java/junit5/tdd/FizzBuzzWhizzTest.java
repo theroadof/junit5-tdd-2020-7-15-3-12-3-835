@@ -36,5 +36,16 @@ public class FizzBuzzWhizzTest {
         assertThat(actual,is("Buzz"));
     }
 
+    @Test
+    void should_be_whizz_when_play_say_given_7() {
+        //given
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+        int number = 7;
 
+        //when
+        String actual = fizzBuzzWhizz.say(number);
+
+        //then
+        assertThat(actual,is("Whizz"));
+    }
 }
