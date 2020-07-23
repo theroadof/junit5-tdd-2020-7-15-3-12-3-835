@@ -34,7 +34,6 @@ public class FizzBuzzWhizzTest {
 
         //then
         assertThat(actual,is("buzz"));
-
     }
 
 
