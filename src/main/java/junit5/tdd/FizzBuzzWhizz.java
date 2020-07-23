@@ -1,7 +1,5 @@
 package junit5.tdd;
 
-import com.google.common.base.Strings;
-
 public class FizzBuzzWhizz {
     public String say(int number) {
         String result = "";
