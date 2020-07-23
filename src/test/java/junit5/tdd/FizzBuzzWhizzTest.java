@@ -48,4 +48,17 @@ public class FizzBuzzWhizzTest {
         //then
         assertThat(actual,is("Whizz"));
     }
+
+    @Test
+    void should_be_fizzbuzz_when_play_say_given_3x5() {
+        //given
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+        int number = 15;
+
+        //when
+        String actual = fizzBuzzWhizz.say(number);
+
+        //then
+        assertThat(actual,is("FizzBuzz"));
+    }
 }
